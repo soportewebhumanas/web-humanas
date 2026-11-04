@@ -1,0 +1,47 @@
+/*
+ * YT Video Background
+ * Version: 1.0
+ * Author: marcoscgdev@gmail.com
+ *
+ * License: Envato Regular License
+ * Re-distribution of this script is not allowed.
+ * https://codecanyon.net/user/marcoscgdev
+*/
+.video-intro {
+	height: 80vh !important;
+	overflow: hidden;
+}
+* { box-sizing: border-box; }
+.video-yt {
+  background: #FFF;
+  position: absolute;
+  overflow: hidden;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 0;
+}
+.yt-video-background-image,
+.yt-video-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.video-yt iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.yt-video-background { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+	.yt-video-background { width: 300%; left: -100%; }
+}

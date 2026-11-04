@@ -1,0 +1,421 @@
+/*Fuente general*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
+/*Fuente del menú*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*GOOGLE-FONTS*/	
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*CARDS-MÓVIL*/		
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+/*CARDS-SEMINARIOS*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+/*****************************************************Fuentes*****************************************************/		
+		*{
+			font-family: 'Nunito Sans', sans-serif;
+		}
+	/*****************************************************Fuentes*****************************************************/
+
+	/*****************************************************Estilos Menú*****************************************************/
+
+		.nav-link *{
+			font-weight: lighter;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.dropdown-menu{
+			border-top: #26406C !important;
+			background-color: #FFF !important;
+		}
+
+		.dropdown-menu ul li{
+			border-width: 0px !important;
+		}
+
+		.dropdown-menu li a:hover{
+			background-color:#26406C !important;
+			color: #FFF !important;
+		}
+		.dropdown-menu li a{
+			background-color:#FFF !important;
+			color: #000 !important;
+		}
+		.dropdown-menu ul li a:hover{
+			background-color:#26406C !important;
+		}
+		.nav-item {
+			border-top: 0px !important;
+			border-right: 0px !important;
+			border-left: 0px !important;
+			text-align: left !important;
+		}
+	/*****************************************************Estilos Menú*****************************************************/
+
+	/*-----------------------------------------CAROUSEL--------------------------------------------------*/
+		.carousel-control-next, .carousel-control-prev /*, .carousel-indicators */ {
+			font-size: 2.5rem !important;
+			/*text-shadow: 4px 4px 20px #1b365d;*/
+			color: rgba(230, 230, 240, 0.8) !important;
+		}
+		.inscripciones{
+			font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif !important;
+		}
+		.inscripciones-azul{
+			font-family: 'Roboto', sans-serif !important;
+		}	
+		.boton:hover{
+			background-color: #223973 !important;
+			color: #FFF !important;
+		}
+		.boton a:hover{
+			color: #FFF !important;
+		}
+
+		.bloqueDerechoPlumas{
+			height: 300px;
+		}
+		.bloqueDerechoContenido{
+			height: 300px;			
+		}
+		.bloqueDerechoTitulo{
+			font-size: 1.5rem;			
+		}
+		.bloqueDerechoParrafo{
+			font-size: 0.8rem;						
+		}						
+		@media screen and (min-width: 1440px) { 
+			.bloqueDerechoPlumas{
+				height: 400px;
+			}
+			.bloqueDerechoContenido{
+				height: 400px;			
+			}
+			.bloqueDerechoTitulo{
+				font-size: 2rem;			
+			}
+			.bloqueDerechoParrafo{
+				font-size: 1.2rem;						
+			}							 
+		}
+		@media screen and (min-width: 1920px) { 
+			.bloqueDerechoPlumas{
+				height: 450px;
+			}
+			.bloqueDerechoContenido{
+				height: 450px;			
+			}
+			.bloqueDerechoTitulo{
+				font-size: 2rem;			
+			}
+			.bloqueDerechoParrafo{
+				font-size: 1.2rem;						
+			}							 
+		}
+	/*-----------------------------------------MODAL--------------------------------------------------*/
+	/*---- Incluir Script ----*/
+	.modal-backdrop {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1040;
+		background-color: #000;
+	}	
+	.modal-backdrop {
+		opacity: 0 !important;
+		filter: alpha(opacity=0) !important;
+	}
+
+	/*-----------------------------------------CARDS-MÓVIL--------------------------------------------------*/		
+		.cards-mobile-facultad{
+			height: 100px; 
+			width: 84vw; 
+			margin: 2% 8%;
+			background-color: #5c85cc;
+			font-family: 'Cabin', sans-serif;
+			text-transform: uppercase !important;
+			text-shadow: 2px 2px #000; 
+
+		}
+		.cards-mobile-facultad:hover{
+			filter: contrast(1.25) !important;			
+			box-shadow: 0px 0px 25px #5c85cc !important;
+			width: 86%; 
+			margin: 1% 7%;			
+		}
+		.cards-mobile-posgrado{
+			text-shadow: 2px 2px #000; 
+			height: 100px; 
+			width: 84vw; 
+			margin: 2% 8%;
+			background-color: #767bbbff;
+			font-family: 'Cabin', sans-serif;
+			text-transform: uppercase !important;
+		}
+		.cards-mobile-posgrado:hover{
+			filter: contrast(1.15) !important;			
+			box-shadow: 0px 0px 25px #767bbbff !important;
+			width: 86%; 
+			margin: 1% 7%;			
+		}
+		.cards-mobile-extension{
+			text-shadow: 2px 2px #000; 
+			height: 100px; 
+			width: 84vw; 
+			margin: 2% 8%;
+			background-color: #78c3e4;
+			font-family: 'Cabin', sans-serif;
+			text-transform: uppercase !important;
+		}
+		.cards-mobile-extension:hover{
+			filter: contrast(1.25) !important;			
+			box-shadow: 0px 0px 25px #78c3e4 !important; 
+			width: 86%; 
+			margin: 1% 7%;			
+		}
+	/*-----------------------------------------CARDS-SEMINARIOS--------------------------------------------------*/
+	.card-seminarios {
+		text-shadow: 2px 2px #000; 
+		font-family: 'Cabin', sans-serif;	
+		position: relative;
+		width: 84vw;
+		height: 156px;
+		background: #15a6b9;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.8rem;
+		font-weight: bold;
+		border-radius: 15px;
+		cursor: pointer;
+		image-rendering: auto;
+		background-position: center center;
+		background-size: cover;
+		background-image:url("../images/index/fondo-seminarios.png");
+		background-repeat: no-repeat;
+	}
+	@media screen and (min-width: 1440px) { 
+		.card-seminarios {
+			height: 234px;
+		}
+	}
+	@media screen and (min-width: 1920px) { 
+		.card-seminarios {
+			height: 273px;
+		}							 
+	}
+
+	.card-seminarios::before,
+	.card-seminarios::after {
+	position: absolute;
+	content: "";
+	width: 20%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8rem;
+	font-weight: bold;
+	background-color: rgba(21, 166, 185, 0.9);
+	transition: all 0.5s;
+	}
+
+	.card-seminarios::before {
+	top: 0;
+	right: 0;
+	border-radius: 0 15px 0 100%;
+	}
+
+	.card-seminarios::after {
+	bottom: 0;
+	left: 0;
+	border-radius: 0 100%  0 15px;
+	}
+
+	.card-seminarios:hover::before,
+	.card-seminarios:hover:after {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	transition: all 0.5s;
+	}
+
+	.card-seminarios:hover:after {
+	content: "SEMINARIOS";
+	}
+
+	.material-symbols-outlined {
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 48
+	}
+	
+	/*----------------------------------------------------------Tarjetas: Extensión, Jornadas, Elecciones, Protocolo----------------------------------------------------------*/
+	.tarjetas{
+		font-family: 'Cabin', sans-serif;
+		text-transform: uppercase !important;
+		text-shadow: 1px 1px #000000;
+	}
+	.tarjetas a h3{
+		font-size: 0.8rem !important;
+		color: white;
+	}
+	/* Tarjeta Jornadas */
+	.slider-content-bottom .content_body:hover .btm-item_04::before {
+	    background: #26406C;
+	}
+	.slider-content-bottom .btm-item_04 {
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+	    transition: all 0.3s ease-in-out;
+	    position: relative;
+	    z-index: 1;
+	    padding: 30px 0px;
+	}
+	.slider-content-bottom .btm-item_04::before {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    z-index: -1;
+	    content: "";
+	    transition: all 0.3s ease-in-out;
+	  
+	}
+	.slider-content-bottom .btm-item_04:hover {
+	    box-shadow: 0 1px 20px #757ab9;
+	    filter: contrast(150%);
+	    transition: all 0.3s ease-in-out;
+	}
+	.slider-content-bottom .btm-item_04::before {
+	    background-color: #757ab9;
+	}
+	/* Tarjeta Jornadas */						
+	/* Tarjeta Elecciones */
+	.slider-content-bottom .content_body:hover .btm-item_05::before {
+	    background: #b3d2e7;
+	}
+	.slider-content-bottom .btm-item_05 {
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+	    transition: all 0.3s ease-in-out;
+	    position: relative;
+	    z-index: 1;
+	    padding: 30px 0px;
+	}
+	.slider-content-bottom .btm-item_05::before {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    z-index: -1;
+	    content: "";
+	    transition: all 0.3s ease-in-out;
+	  
+	}
+	.slider-content-bottom .btm-item_05:hover {
+	    box-shadow: 0 1px 20px #b3d2e7;
+	    filter: contrast(120%);
+	    transition: all 0.3s ease-in-out;
+	}
+	.slider-content-bottom .btm-item_05::before {
+	    background-color: #b3d2e7;
+	}
+	/* Tarjeta Elecciones */
+	/* Tarjeta Protocolo */
+	.slider-content-bottom .content_body:hover .btm-item_06::before {
+	    background: #5cc6d0;
+	}
+	.slider-content-bottom .btm-item_06 {
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+	    transition: all 0.3s ease-in-out;
+	    position: relative;
+	    z-index: 1;
+	    padding: 30px 0px;
+	}
+	.slider-content-bottom .btm-item_06::before {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    z-index: -1;
+	    content: "";
+	    transition: all 0.3s ease-in-out;
+	  
+	}
+	.slider-content-bottom .btm-item_06:hover {
+	    box-shadow: 0 1px 20px #5cc6d0;
+	    filter: contrast(120%);
+	    transition: all 0.3s ease-in-out;
+	}
+	.slider-content-bottom .btm-item_06::before {
+	    background-color: #5cc6d0;
+	}
+	/* Tarjeta Protocolo */
+	.material-symbols-outlined {
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 48
+	}
+	/*---------------------------------PROGRAMAS-INSTITUCIONALES-----------------------------------------------*/
+	.backgroundcolorPI0:hover{
+	background-color: #577390 !important;
+	}
+	.backgroundcolorPI1{
+		background-color:  #6A6EB8 !important;
+	}
+	.backgroundcolorPI2:hover{
+		background-color:  #26406C !important;
+	}
+	.backgroundcolorPI3{
+		background-color:  #52C7B2 !important;
+	}
+	.backgroundcolorPI4:hover{
+		background-color:  #78c3e4 !important;
+	}	
+	.backgroundcolorPI5{
+		background-color:  #78B1FA !important;
+	}
+	.backgroundcolorPI6:hover{
+		background-color:  #6ec496 !important;
+	}
+	.backgroundcolorPI7{
+		background-color:  #395E9E !important;
+	}
+	.backgroundcolorPI8:hover{
+		background-color:  #8d6dac !important;
+	}
+	.backgroundcolorPI9:hover{
+		background-color:  #8FAAD9 !important;
+	}
+	.divMagicImgPar:hover .overlay table {
+		background-color: transparent !important;
+	}
+
+	/*---------------------------------CATEDRAS-LIBRES--------------------------------------*/
+	.alturaMovilCatedras{
+    	height: 100px;
+  	}
+	@media only screen and (max-width: 800px) {
+		.alturaMovilCatedras{
+			height: 150px;
+		}
+	}			
+
+	/*Intro text*/
+	.intro-text a{
+		color:#26406C !important;
+	}
+
+	.intro-text i{
+		color:#26406C !important;
+	}	
+
+	.intro-text .b-active{
+		color:#256B6B !important;
+	}

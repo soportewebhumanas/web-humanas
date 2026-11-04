@@ -1,0 +1,676 @@
+/*-------------------------------------------------------
+[Master Stylesheet]
+	Template Name	LearnPro - Education HTML Tamplate
+	Description: 	A responsive Modern Education HTML5 Tamplate
+	Version:		1.0
+	Author: 		EcologyTheme
+	Template URI:	http://ecologytheme.com
+	License URI:	http://ecologytheme.com/
+
+-------------------------------------------------------*/
+/*----------------------------------------------------
+[Color codes]
+
+	Background:		
+	Background Overlay: 
+	Content: #727272	
+	Header h1:#333333
+	Header h2:#333333 	
+	Header h3: #333333
+
+-------------------------------------------------------*/
+/*------------------------------------------------------
+[Typography]
+	Body: 'Open Sans', sans-serif;
+	Headers: 'Montserrat' ;		
+	Input, textarea: 'Open Sans' Light;
+	Sidebar heading: 'Montserrat' Semibold;
+----------------------------------------------------*/
+/*====================================
+		===[ Default Style ]===
+======================================*/
+	/* Variables */
+	html{
+		width:100vw; 
+		overflow-x:hidden;
+	}
+	body {
+	    font-family: "Arial", sans-serif;
+	    overflow-x: hidden;
+	    width: 100vw;
+	}
+	p {
+	    font-family: "Arial", sans-serif;
+	    color: #727272;
+	    line-height: 24px;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+	    font-family: "Arial", sans-serif;
+	    font-weight: 700;
+	}
+	h2 {
+	    margin: 0;
+	    text-align: center;
+	    color: #333333;
+	    position: relative;
+	}
+	h3 {
+	    line-height: 26px;
+	    margin: 0;
+	    padding-bottom: 20px;
+	    color: #333333;
+	    transition: all 0.3s ease-in-out;
+	}
+	.section-header-box {
+	    margin-bottom: 28px;
+	}
+	.section-header,
+	.section-header-l {
+	    padding-bottom: 25px;
+	    text-align: center;
+	}
+	.section-header:before,
+	.section-header-l:before {
+	    border-bottom: 1px solid #b2b2b2;
+	    bottom: 15px;
+	    content: "";
+	    height: 2px;
+	    left: 50%;
+	    position: absolute;
+	    transform: translateX(-50%);
+	    width: 100px;
+	}
+	.section-header p,
+	.section-header-l p {
+	    margin: 0;
+	}
+	.section-header-l h2 {
+	    text-align: left;
+	}
+	.section-header-l:before {
+	    left: 15px;
+	    transform: none;
+	}
+	
+	/*=================================================
+		===[ Home Version 01 ]===
+===================================================*/
+	
+	header {
+	    /*=======[ Index Navbar Style ]========*/
+	    /*=======[ Index Header Body Style ]========*/
+	    /*=======[ Index Rev Slider Style ]========*/
+	    /*=======[ Index Rev Slider btn  Style ]========*/
+	    /*slider btn style*/
+	    background-color: #FFFFFF; 
+	    width: 100vw; 
+	    color:white;
+
+	}
+	.navbar-dark{
+		background-color: #26406C;
+	}
+
+	.menuPrincipal{
+		width: 100%;display:flex; justify-content:space-between;
+	}
+	.navbar{
+		justify-content: flex-start;
+	}
+	.isologotipoImg{
+		width: 100%;
+	}
+	.navSuperior div span{
+		color: #26406C;
+	}
+	header .header-top {
+	    background: #26406C;		/* AZUL INSTITUCIONAL */
+	}
+
+	
+	/*=======[ Index Rev Slider Content Style ]========*/
+	
+	.slider-content-bottom {
+		padding-top: 1vh;
+	    background: #ffffff;
+	    text-align: center;
+	   
+	}
+	.slider-content-bottom .sider-btm-row-inner {
+	    padding: 0 15px;
+	}
+	.slider-content-bottom .slide_cont_box_01 {
+	    padding: 0 4px 0 0;
+	}
+	.slider-content-bottom .slide_cont_box_02 {
+	    padding: 0 4px 0 4px;
+	}
+	.slider-content-bottom .slide_cont_box_03 {
+	    padding: 0 0 0 4px;
+	}
+	.slider-content-bottom .content_body:hover .btm-item_01::before {
+	    background: #26406C;
+
+	}
+	.slider-content-bottom .content_body:hover .btm-item_02::before {
+	    background: #26406C;
+	}
+	.slider-content-bottom .content_body:hover .btm-item_03::before {
+	    background: #26406C;
+	}
+	.slider-content-bottom .btm-item_01,
+	.slider-content-bottom .btm-item_02,
+	.slider-content-bottom .btm-item_03 {
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+	    transition: all 0.3s ease-in-out;
+	    position: relative;
+	    z-index: 1;
+	    padding: 30px 0px;
+	}
+	.slider-content-bottom .btm-item_01::before,
+	.slider-content-bottom .btm-item_02::before,
+	.slider-content-bottom .btm-item_03::before {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    z-index: -1;
+	    content: "";
+	    transition: all 0.3s ease-in-out;
+	  
+	}
+	.slider-content-bottom .btm-item_01:hover,
+	.slider-content-bottom .btm-item_02:hover,
+	.slider-content-bottom .btm-item_03:hover {
+	    box-shadow: 0 1px 20px rgb(38, 64, 108);
+	    filter: contrast(150%);
+	    transition: all 0.3s ease-in-out;
+	}
+	.slider-content-bottom .btm-item_01::before {
+	    background-color:  rgb(38, 64, 108);
+	}
+	.slider-content-bottom .btm-item_02::before {
+	    background-color:  rgb(81,168,177);
+	}
+	.slider-content-bottom .btm-item_03::before {
+	    background-color: rgb(120,195,228);
+	}
+	.slider-content-bottom .slider-btm-box .btm-item-icon {
+	    height: 100px;
+	    width: 75px;
+	    padding-bottom: 30px;
+	}
+
+	.slider-content-bottom .slider-btm-box h3 {
+	    color: #ffffff;
+	    padding: 0;
+	}
+	.slider-content-bottom .slider-btm-box p {
+	    color: #ffffff;
+	    margin: 0;
+	    padding: 15px 0;
+	}
+	.slider-content-bottom .slider-btm-box a {
+	    color: #fff;
+	    font-family: "Open Sans", sans-serif;
+	    text-transform: uppercase;
+	    text-decoration: none;
+	}
+	.slider-content-bottom .slider-btm-box a .slider-b-btn-icon {
+	    padding-left: 10px;
+	}
+
+	.slider-btm-box:hover{
+	    text-decoration: none;
+	    filter: brightness(0.9);
+	    filter: drop-shadow(5px 10px 10px silver);
+	}
+
+	@media only screen and (min-width: 768px) {
+		
+	}
+	
+
+/* Personal Styles */
+.img-logo-nav {
+	width: 80%;
+	margin: 2px 0px;}
+
+.navbar-toggle{
+	display: none;
+}
+
+.custom-social{
+	font-size: 24px;
+	color: #26406C;
+}
+
+.custom-social:hover{
+	filter: brightness(2);
+	width: 120%;
+	height: auto;
+}
+
+.custom-social-static{
+	font-size: 24px;
+	color: #26406C;
+}
+
+.custom-social-static:hover{
+	filter: brightness(2);
+	height: auto;
+}
+
+
+.custom-siu{
+	text-decoration: none;
+}
+
+.custom-siu:hover{
+	filter: brightness(1.75);
+	text-decoration: none;
+}
+
+p, h1, h2,h3,h4,h5,h6, span, b, i, u{
+	font-size: 16px;
+}
+/*=======[Index Footer Area Style ]========*/
+footer{
+	  background: rgb(223,223,223);
+	  padding: 0;
+	  margin: 0;
+	  width: 100vw;
+}
+.footersection{
+	color: #26406C;
+	font-size: 16px;
+	font-family: Arial;
+}
+
+.secondFooterDiv div ul li, .secondFooterDiv ul li{
+	color: #26406C;
+}
+.secondFooterDiv div ul li a, .secondFooterDiv ul li a{
+	color: #26406C;
+	text-decoration: none;
+}
+.itemContacto{
+	font-size: 16px;
+	font-family: Arial;
+	color: #26406C;
+	word-break: break-word;
+}
+.infoItem{
+	font-size: 16px;
+	color: #26406C;
+}
+.infoItem:hover{
+	color: #26406C;
+	text-decoration: none;
+	font-weight: bold;
+	filter: brightness(1.5);
+}
+.enlacesFooter{
+	color: white;
+	text-align: left;
+}
+
+
+/* DIV MAGIC*/
+.figMsg{
+	color: white;
+	opacity: 1;
+}
+.backgroundcolorPI0:hover{
+	background-color: rgb(38,64,108);
+}
+.backgroundcolorPI1{
+	background-color:  rgb(120,195,228);
+}
+.backgroundcolorPI2:hover{
+	background-color:  rgb(81, 168, 177);
+}
+.backgroundcolorPI3{
+	background-color:  rgb(92, 133, 204);
+}
+
+.backgroundcolorPI4:hover{
+	background-color:  rgb(92, 198, 208);
+}
+
+
+
+.programasInstitucionales{
+	font-family: Arial; 
+	color:#26406C; 
+	font-weight: bolder;
+}
+
+.arialMedio{
+	font-family: Arial;
+	font-size: 18px;
+}
+
+.arialGrande{
+	font-family: Arial;
+	font-size: 20px;
+}
+
+.arialRoundedGrande{
+	font-family: "Arial Rounded MT Bold", sans-serif;
+	font-size: 24px;
+}
+
+@media (max-width: 768px) {
+	.arialResponsive{
+		font-size: 2.5em;
+		line-height: 2.5em;
+	}
+}
+@media (min-width: 768px) {
+	.arialResponsive{
+		font-size: 3.5em;
+		line-height: 3.5em;
+	}
+}
+
+
+.textAzulInstitucional{
+	color:  #26406C;
+}
+
+.TituloCatedras{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+	/*text-align: right;*/
+	color: #26406C ;
+}
+.TituloCatedrasMD{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 32px;
+	/*text-align: right;*/
+	color: #26406C ;
+}
+
+
+@media only screen and (max-width: 992px) {
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+@media only screen (max-width: 768px) {
+	.programasInstitucionales{
+		font-size: 1.8rem; 
+		line-height: 1.8rem;
+	}
+	
+}
+
+@media only screen (min-width: 768px) and (max-width: 992px) {
+	.programasInstitucionales{
+		font-size: 2rem; 
+		line-height: 2rem;
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+	.programasInstitucionales{
+		font-size: 2.2rem; 
+		line-height: 2.2rem;
+	}
+}
+
+.catedrasText{
+		font-family: Arial;
+		font-size: 3.5vmin;
+		line-height: 3.5vmin;
+	}
+
+
+/*CATEDRAS LIBRES*/
+.cardCatedra:hover{
+	filter: brightness(105%);
+	text-decoration: none;
+}
+.cardCatedra:hover div{
+	filter: brightness(110%);
+}
+/*END CATEDRAS LIBRES*/
+
+
+/* DIV MAGIC*/
+	/*PARES (mostrar imagen al hover)*/
+		.divMagicImgPar img {
+		  	z-index: 100;
+			filter: brightness(40%);
+			width: 100%;
+			height: 100%;
+		}
+		.divMagicImgPar .overlay {
+			z-index: 101;
+			position:absolute;
+			text-decoration: none;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		.divMagicImgPar:hover .overlay table {
+			 background-color: transparent;
+		}
+
+
+	/* Impares (ocultar imagen al hover)*/
+		.figMsg td:hover{
+			text-decoration: none;
+		}
+		.divMagicImgImpar img {
+		  	z-index: 100;
+		  	filter: brightness(40%);
+	
+			width: 100%;
+			height: 100%;	
+		}
+		.divMagicImgImpar .overlay {
+			z-index: 101;
+			position:absolute;
+			text-decoration: none;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+		}
+		.divMagicImgImpar:hover img{
+		  /*visibility: hidden;*/
+		}
+
+	/*FIN DIVMagicImg*/
+
+		/* Seminarios */
+
+		.divMagicSeminarios img {
+		  	z-index: 100;
+		  	filter: brightness(65%);
+		}
+		.divMagicSeminarios .overlay {
+			font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+			font-size: 38px;
+			z-index: 99;
+			position:absolute;
+			text-decoration: none;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		.divMagicSeminarios:hover img{
+		  filter: brightness(30%);
+		}
+
+/*FIN DIVMagicImg*/
+
+.ultimaNoticiaDIV{
+	background-color: rgb(90,171,180);
+}
+
+@media (max-width: 768px) {
+	.ultimaNoticiaTitulo{
+		font-size: 1.8em; 
+		font-family: 'Nunito', sans-serif;
+		line-height: 1em;
+	}
+}
+
+@media (min-width: 769px) {
+	.ultimaNoticiaTitulo{
+		font-size: 3em; 
+		font-family: 'Nunito', sans-serif;
+		line-height: 1em;
+	}
+}
+
+.ultimaNoticiaResumen p{
+	color:#26406C; 
+	font-size: 14px; 
+	font-family: 'Arial'; 
+	font-weight:bold; 
+	overflow-y: auto;	
+}
+
+
+@media (max-width: 768px) {
+	.ultimaNoticiaEnlace{
+		width: 100%;
+		height: 100%;
+		font-size:16px; 
+		line-height:16px; 
+		padding:0;
+		margin:0;
+		color:white; 
+		text-align: right;
+		vertical-align: bottom;
+	}
+}
+
+@media (min-width: 769px) {
+	.ultimaNoticiaEnlace{
+		width: 100%;
+		height: 100%;
+		font-size:16px; 
+		line-height:16px; 
+		padding:0;
+		margin:0;
+		color:white; 
+		text-align: center;
+		vertical-align: bottom;
+	}
+}
+.ultimaNoticiaEnlace:hover{
+	font-weight: bolder;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.overlayCarousel {
+	height: 100%;
+  background-image: linear-gradient(transparent, rgba(0,0,0,0.98));
+	background-color: transparent;
+}
+
+.bottomRightShadow {
+	height: 100%;
+  	background-image: linear-gradient(to bottom, transparent, transparent, transparent, transparent, transparent, rgba(38, 64, 108,0.98));
+	background-color: transparent;
+}
+
+.divNoticiasCarousel .overlayCarousel, .divNoticiasCarousel .bottomRightShadow{
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+	font-size: 38px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position:absolute;
+	text-decoration: none;
+	bottom:0;
+	left:0;
+	width: 100%;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.divMagicSeminarios:hover img{
+  filter: brightness(30%);
+}
+
+.tableNoticiasCarousel{
+	position: absolute;
+	bottom: 5px;
+}
+.tableNoticiasCarousel tr td{
+	width:90vw; 
+	padding-left: 5vw;
+	line-height: 1em;
+}
+
+.tableNoticiasCarousel tr td a{
+	color: white;
+}
+
+
+@media (max-width: 768px) {
+	#NoticiaCarousel{
+		font-size:11px;
+	}
+	#TituloNoticiaCarousel{
+		font-size:24px;
+	}
+	#EnlaceNoticiaCarousel{
+		font-size:11px;
+	}
+}
+@media (min-width: 768px) {
+	#NoticiaCarousel{
+		font-size:16px;
+	}
+	#TituloNoticiaCarousel{
+		font-size:48px;
+	}
+	#EnlaceNoticiaCarousel{
+		font-size:16px;
+	}
+}
+
+/*Justificar el texto en el show de programas*/
+.innerJustify p{
+	text-align: justify;
+}
+
+.become-teachers{
+	min-height: 65vh;
+}
+
+.text-color-institucional{
+	color:#26406C;
+}

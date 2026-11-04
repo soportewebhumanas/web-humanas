@@ -1,0 +1,119 @@
+/*.navbar {
+	background-color: red; 
+    color: white;
+}
+
+.navbar-nav{
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+     color: white;
+}
+
+.dropdown-menu{
+	opacity: 1;
+    visibility: visible;
+    max-height: 1000%;
+    transition: all 0.5s ease-in-out;
+    border-top: 3px solid #6C93D5;
+ 	box-shadow: 0 1px 5px -1px rgb(0 0 0 / 30%);
+ 	padding: 0px 0px;	
+	min-width: 225 px;
+    background: #ffffff;
+    z-index: 999;
+    transform-origin: 0 0 0;
+    position: absolute;
+    left: inherit;
+    color: white;
+}
+
+.dropdown-item{
+	margin-left: 0px;
+    padding: 10px 30px 12px;
+	color: #333333;
+    text-transform: none;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 0;
+    transition: all ease-in-out 0.3s;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-link{
+     color: white;
+}
+
+
+.dropdown-item:hover{
+	background-color: #26406C;
+	color: white;
+	width: 100%;
+}
+
+.caret{border-top:4px solid red;}
+
+.navbar-dark .navbar-nav .nav-link {
+     color: white;
+}
+
+*/
+
+@media only screen and (min-width: 992px) {
+     .nav-item{
+          font-weight: bold;
+          font-size: 1.05em;  /*5% más de la vigente*/
+     }
+     .dropdown-toggle b{
+          display: none;
+     }
+     .dropdown-menu{
+         visibility: visible;
+         padding: 10px 0px;
+         border-top: 3px solid #6C93D5;
+         transition: all 0.5s ease-in-out;
+          box-shadow: 0 1px 5px -1px rgb(0 0 0 / 30%);
+          left: inherit;
+         background: #ffffff;
+     }
+
+}
+
+
+@media only screen and (max-width: 992px) {
+     .nav-item{
+         border: solid 1px white;
+     }
+
+     .dropright .dropdown-toggle::after{
+          display: none;
+     }
+     .dropdown-toggle b{
+          font-weight: bold;
+          float: right;
+          color: white;
+     }
+     .submenu1{
+          border-top: 3px solid #89AAE1;
+          background-color: #375689;
+          color: white;
+     }
+
+     .submenu2{
+          border-top: 3px solid #6E92CE;
+          background-color: #44669F;
+          color: grey;
+     }
+     .submenu3{
+          border-top: 3px solid #597BB4;
+          background-color: #5274AE;
+     }
+     .submenu1 li a{
+          color: white;
+     }
+     .submenu1 .dropdown-item:focus a, .submenu1 .dropdown-item:hover a{
+          background-color: #375689;
+     }
+}

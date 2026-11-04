@@ -1,0 +1,60 @@
+name: humanas
+
+services:
+  app:
+    build:
+      context: ./docker/php
+      args:
+        UID: ${HOST_UID:-1000}
+        GID: ${HOST_GID:-1000}
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    image: nginx:1.27-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html:ro
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - app
+
+  db:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: root_local
+      MYSQL_DATABASE: humanas
+      MYSQL_USER: humanas
+      MYSQL_PASSWORD: humanas_local
+    ports:
+      - "3307:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-proot_local"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  mailpit:
+    image: axllent/mailpit
+    ports:
+      - "8025:8025"
+
+  node:
+    image: node:22-alpine
+    user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
+    working_dir: /var/www/html
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "5173:5173"
+    profiles: ["dev"]
+    command: sh -c "npm install && npm run dev"
+
+volumes:
+  dbdata:

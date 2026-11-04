@@ -1,0 +1,49 @@
+# Archivos de configuración local y claves (¡NUNCA SUBIR A GITHUB!)
+/.env
+/.env.backup
+/.env.production
+/.env.*.local
+/storage/*.key
+
+# Dependencias de código
+/vendor/
+/node_modules/
+/npm-debug.log
+/yarn-error.log
+
+# Cache y archivos generados por Laravel
+/bootstrap/cache/*.php
+/storage/app/*
+!/storage/app/.gitignore
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# Datos persistentes y logs de Docker
+# (Ajusta los nombres según cómo hayas llamado a tus volúmenes locales en docker-compose)
+/mysql_data/
+/postgres_data/
+/redis_data/
+/.docker/
+/*.log
+
+# Archivos compilados de Frontend / Assets
+/public/build
+/public/hot
+/public/storage
+
+# Archivos del sistema operativo e IDEs
+.DS_Store
+Thumbs.db
+/.idea
+/.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
